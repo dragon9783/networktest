@@ -1,4 +1,9 @@
 #! /bin/sh
+
+if [ ! -d "/var/log/networktest" ]; then
+  mkdir -p /var/log/networktest/
+fi
+
 while true
 do
   if ! ping -c 1 -W 2 github.com  &> /dev/null; then
