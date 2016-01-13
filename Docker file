@@ -1,0 +1,3 @@
+From alpine
+ADD ./networktest.sh /networktest.sh
+CMD 
